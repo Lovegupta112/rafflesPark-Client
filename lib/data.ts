@@ -20,7 +20,7 @@ import {
   Car,
 } from "lucide-react"
 
-export const heroImages = ["/images/raffles1.png", "/images/raffles2.png", "/images/raffles3.png"]
+export const heroImages = ["/raffles1.png", "/raffles2.png", "/raffles3.png"]
 
 export const atGlanceData = [
   { icon: Home, label: "TYPE", value: "Residential Villa" },
@@ -73,12 +73,12 @@ export const priceData = [
 ]
 
 export const galleryImages = [
-  { src: "/images/raffles1.png", title: "Luxury Rooftop Terrace", category: "Exterior" },
-  { src: "/images/raffles2.png", title: "Spacious Living Area", category: "Interior" },
-  { src: "/images/raffles3.png", title: "Grand Entrance", category: "Exterior" },
-  { src: "/placeholder.svg?height=600&width=800", title: "Modern Kitchen", category: "Interior" },
-  { src: "/placeholder.svg?height=600&width=800", title: "Swimming Pool", category: "Amenities" },
-  { src: "/placeholder.svg?height=600&width=800", title: "Master Bedroom", category: "Interior" },
+  { src: "https://hips.hearstapps.com/hmg-prod/images/rooftop-patio-ideas-2-1557261249.jpg?crop=1.00xw:0.401xh;0,0.324xh&resize=1200:*", title: "Rooftop", category: "Exterior" },
+  { src: "https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg", title: "Spacious Living Area", category: "Interior" },
+  { src: "https://images.pexels.com/photos/3639540/pexels-photo-3639540.jpeg", title: "Grand Entrance", category: "Exterior" },
+  { src: "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg", title: "Modern Kitchen", category: "Interior" },
+  { src: "https://images.pexels.com/photos/2227774/pexels-photo-2227774.jpeg", title: "Swimming Pool", category: "Amenities" },
+  { src: "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg", title: "Master Bedroom", category: "Interior" },
 ]
 
 export const virtualTourSpots = [

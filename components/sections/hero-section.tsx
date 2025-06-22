@@ -10,6 +10,13 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ images }: HeroSectionProps) {
+  // Use default images if none are provided or if the array is empty
+  const defaultImages = [
+    "/raffles1.png",
+    "/raffles2.png",
+    "/raffles3.png"
+  ];
+  const heroImages = images && images.length > 0 ? images : defaultImages;
   const [currentSlide, setCurrentSlide] = useState(0)
   const [mounted, setMounted] = useState(false)
 
@@ -21,24 +28,24 @@ export function HeroSection({ images }: HeroSectionProps) {
     if (!mounted) return
 
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % images.length)
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length)
     }, 5000)
     return () => clearInterval(timer)
-  }, [mounted, images.length])
+  }, [mounted, heroImages.length])
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length)
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length)
   }
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length)
+    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)
   }
 
   return (
     <section className="relative h-screen overflow-hidden">
       <div className="relative w-full h-full">
         {mounted &&
-          images.map((image, index) => (
+          heroImages.map((image, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -46,7 +53,7 @@ export function HeroSection({ images }: HeroSectionProps) {
               }`}
             >
               <Image
-                src={image || "/placeholder.svg"}
+                src={image}
                 alt={`Raffles Park Villa ${index + 1}`}
                 fill
                 className="object-cover"
@@ -57,7 +64,7 @@ export function HeroSection({ images }: HeroSectionProps) {
         {!mounted && (
           <div className="absolute inset-0">
             <Image
-              src={images[0] || "/placeholder.svg"}
+              src={heroImages[0] || "/placeholder.svg"}
               alt="Raffles Park Villa"
               fill
               className="object-cover"
@@ -107,7 +114,7 @@ export function HeroSection({ images }: HeroSectionProps) {
         {/* Dots Indicator */}
         {mounted && (
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {images.map((_, index) => (
+            {heroImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}

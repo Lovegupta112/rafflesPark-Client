@@ -1,14 +1,20 @@
-# raffles
+# Raffles
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern property website for Raffles Park Villas in Bangalore.
+
+---
+
+![Raffles Park Villa 1](public/raffles3.png)
+![Raffles Park Villa 2](public/raffles2.png)
+
+**Made by lovegupta**  
+GitHub: [lovegupta112](https://github.com/lovegupta112)
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/lovegupta112s-projects/v0-raffles)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/HS1jbc6vLuk)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+This repository contains the code for the Raffles Park Villas website, showcasing luxury living in Whitefield, Bangalore with world-class amenities.
 
 ## Deployment
 
@@ -16,15 +22,6 @@ Your project is live at:
 
 **[https://vercel.com/lovegupta112s-projects/v0-raffles](https://vercel.com/lovegupta112s-projects/v0-raffles)**
 
-## Build your app
+---
 
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/HS1jbc6vLuk](https://v0.dev/chat/projects/HS1jbc6vLuk)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+For any queries or contributions, please contact [lovegupta112](https://github.com/lovegupta112).
